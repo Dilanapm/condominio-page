@@ -33,7 +33,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
                     target="_blank"
                     className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
                 >
-                    Github
+                    Página web
                 </Link>
 
                 <Link
@@ -41,7 +41,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
                     target="_blank"
                     className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
                 >
-                    Live demo
+                    Página de referencia
                 </Link>
             </div>
         </div>
