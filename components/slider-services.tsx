@@ -16,6 +16,9 @@ const SliderServices = () => {
                 768: {
                     slidesPerView: 2,
                     spaceBetween: 15
+
+
+                    
                 },
                 1024: {
                     slidesPerView: 3,
