@@ -1,9 +1,14 @@
 import Image from "next/image";
 import ContainerPage from "@/components/container-page";
+import ContactForm from "@/components/ContactForm";
+import { useState } from "react";
 
 const TrialSection = () => {
+
+    const [showForm, setShowForm] = useState (false);
     return (
         <ContainerPage>
+            {showForm && <ContactForm onClose={() => setShowForm(false)} />}
             <div className="flex flex-col justify-center items-center min-h-screen px-6 text-center">
                 {/* Contenedor principal */}
                 <div className="max-w-5xl mx-auto">
@@ -23,16 +28,21 @@ const TrialSection = () => {
                         <button className="px-6 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition">
                             Comienza ahora
                         </button>
-                        <button className="px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow-md transition">
+
+                        <button 
+                            className="px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow-md transition"
+                            onClick={() => setShowForm(true)} // Este botón abrirá el formulario
+                        >
                             Déjanos tus datos
                         </button>
-                    </div>
+                    
 
-                    {/* Botones de descarga */}
+                    {/* Botones de descarga *
                     <div className="mt-8 flex justify-center gap-4">
                         <Image src="/imgapplestore.webp" alt="Descargar en App Store" width={190} height={10} />
                         <Image src="/imgplaystore.webp" alt="Disponible en Google Play" width={130} height={80} />
-                    </div>
+                    </div> */}
+
                 </div>
 
                 {/* Línea divisoria */}
@@ -69,6 +79,9 @@ const TrialSection = () => {
                     </div>
                 </div>
             </div>
+
+            </div>
+            
         </ContainerPage>
     );
 };
