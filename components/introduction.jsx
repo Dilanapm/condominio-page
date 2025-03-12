@@ -3,28 +3,34 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => {
     return (
-        <div className="z-20 w-full bg-darkBg/60">
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
+        <div className="z-20 w-full bg-darkBg/60 h-screen flex items-center justify-center overflow-hidden">
+            <div className="grid items-center h-full max-w-6xl px-6 py-10 md:grid-cols-2">
+                
+                {/* Imagen optimizada */}
                 <Image 
                     src="/home-4.webp"
                     priority
-                    width="300"
-                    height="300"
+                    width={300}
+                    height={300}
                     alt="Avatar"
-                    className="rounded-xl mt-3 lg:mt-20 w-1/2 sm:w-full max-w-xs  md:max-w-md lg:max-w-lg mx-auto" />
+                    className="rounded-xl w-2/3 sm:w-full max-w-xs md:max-w-md lg:max-w-lg mx-auto object-contain max-h-[96vh]"
+                />
+
+                {/* Texto */}
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Techforge te brinda, <br />
+                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">
+                        Techforge te brinda, <br />
                         <TypeAnimation
                             sequence={[
                                 'Mejor Seguridad ☠️',
                                 1000,
-                                'Automatizacion de tu Condominio 🥰',
+                                'Automatización de tu Condominio 🥰',
                                 1000,
-                                'Integracion con IA para facilitar los registros 🤖',
+                                'Integración con IA para facilitar los registros 🤖',
                                 1000,
-                                'Gestion mejorada de tu Condominio 🤗',
+                                'Gestión mejorada de tu Condominio 🤗',
                                 1000,
-                                'el control de tu Condominio 🫡',
+                                'El control de tu Condominio 🫡',
                                 1000
                             ]}
                             wrapper="span"

@@ -3,14 +3,13 @@
 import { CoverParticles } from "@/components/cover-particles";
 import Introduction from "@/components/introduction";
 import TransitionPage from "@/components/transition-page";
-
+import ContainerPage from "@/components/container-page";
 export default function Home() {
   return (
     <main>
-      <div className="flex h-full">
-        <CoverParticles />
-        <Introduction />
-      </div>
+      <TransitionPage />
+      <CoverParticles />
+      <Introduction />
     </main>
   );
 }

@@ -11,27 +11,27 @@ export const socialNetworks = [
         logo: <Linkedin size={30} strokeWidth={1} />,
         src: "https://www.linkedin.com/in/tech-forge-b7a9a2354/",
     },
-    // {
-    //     id: 2,
-    //     logo: <Youtube size={30} strokeWidth={1} />,
-    //     src: "#!",
-    // },
+    {
+        id: 2,
+        logo: <Youtube size={30} strokeWidth={1} />,
+        src: "#!",
+    },
     
-    // {
-    //     id: 3,
-    //     logo: <Twitter size={30} strokeWidth={1} />,
-    //     src: "#!",
-    // },
-    // {
-    //     id: 4,
-    //     logo: <Rss size={30} strokeWidth={1} />,
-    //     src: "#!",
-    // },
-    // {
-    //     id: 5,
-    //     logo: <Twitch size={30} strokeWidth={1} />,
-    //     src: "#!",
-    // },
+    {
+        id: 3,
+        logo: <Twitter size={30} strokeWidth={1} />,
+        src: "#!",
+    },
+    {
+        id: 4,
+        logo: <Rss size={30} strokeWidth={1} />,
+        src: "#!",
+    },
+    {
+        id: 5,
+        logo: <Twitch size={30} strokeWidth={1} />,
+        src: "#!",
+    },
 ];
 
 

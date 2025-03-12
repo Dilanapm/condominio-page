@@ -1,46 +1,44 @@
-"use client"
+"use client";
 
 import { ImageDisplay } from "@/components/ImageDisplay";  
 import { Avatar } from "@/components/avatar";
 import ContainerPage from "@/components/container-page";
 import CounterServices from "@/components/counter-services";
 import TransitionPage from "@/components/transition-page";
+import { CoverParticles } from "@/components/cover-particles";
 const AboutUsPage = () => {
     return (
         <>
             <TransitionPage />
             <ContainerPage>
-                {/* <CoverParticles /> */}
-                
-                {/* Texto en el centro */}
-                <div className="flex flex-col items-center text-center my-10">
-                    <h1 className="text-2xl leading-tight text-center md:text-5xl md:mt-10">
-                        Toda nuestra{' '}
-                        <span className="font-bold text-secondary">
-                            trayectoria profesional
-                        </span>
-                    </h1>
-                    <div className="w-1/2 text-center hidden md:block mt-9">
-                        <p className="text-lg font-medium">
+                <CoverParticles/>
+                {/* Contenedor principal centrado y responsivo */}
+                <div className="flex flex-col justify-center items-center min-h-[calc(100vh-150px)] text-center">
+
+                    {/* Sección de texto */}
+                    <div className="w-full max-w-lg">
+                        <h1 className="text-2xl leading-tight md:text-4xl lg:text-5xl font-bold">
+                            Toda nuestra <span className="text-secondary">tractoria profesional</span>
+                        </h1>
+                        <p className="text-lg md:text-xl text-gray-300 mt-4">
                             Innovación y tecnología al servicio de la seguridad y gestión de condominios.
                         </p>
                     </div>
-                </div>
-                {/* Texto al centro en pantallas grandes */}
-                
 
-                {/* Contenedor de imágenes abajo */}
-                <div className="flex flex-col md:flex-row items-center justify-between mt-10">
-                    
-                    {/* Avatar a la izquierda */}
-                    <div className="w-1/3 flex justify-start">
-                        <Avatar />
+                    {/* Sección de imagen y contador en móviles */}
+                    <div className="flex flex-col items-center lg:flex-row">
+                        {/* Avatar - Se adapta en pantallas grandes */}
+                        <div className="w-[200px] md:w-[300px] flex justify-center">
+                            <Avatar />
+                        </div>
+
+                        
                     </div>
+                    {/* Contador de Servicios */}
+                    <div className="w-full max-w-md">
+                            <CounterServices />
+                        </div>
                 </div>
-
-                <CounterServices />
-              
-
             </ContainerPage>
         </>
     );

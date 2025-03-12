@@ -20,6 +20,7 @@ import { CoverParticles } from "@/components/cover-particles";
 const ClientsPage = () => {
     return (
         <ContainerPage>
+            <CoverParticles/>
             <TransitionPage />
             <div className="flex flex-col justify-center items-center relative mt-20">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
