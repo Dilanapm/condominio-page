@@ -1,33 +1,28 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
 
-// 📌 Configuración del proyecto (reemplázala con la tuya)
 const firebaseConfig = {
-    apiKey: "TU_API_KEY",
-    authDomain: "TU_AUTH_DOMAIN",
-    projectId: "TU_PROJECT_ID",
-    storageBucket: "TU_STORAGE_BUCKET",
-    messagingSenderId: "TU_MESSAGING_SENDER_ID",
-    appId: "TU_APP_ID",
+  apiKey: "AIzaSyAwBBxqaYF7iH9oAEsV1Sj54nhiI7GcIHI",
+  authDomain: "forms-ad2d6.firebaseapp.com",
+  projectId: "forms-ad2d6",
+  storageBucket: "forms-ad2d6.firebasestorage.app",
+  messagingSenderId: "737200765779",
+  appId: "1:737200765779:web:4f0e9bcac164273dd6ffa6",
 };
 
-// 🔥 Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// 📌 Función para guardar datos en Firestore
-export const saveContactData = async (formData: any) => {
+export const saveContactData = async (formData: any): Promise<boolean> => {
     try {
-        await addDoc(collection(db, "contactos"), {
-            ...formData,
-            fecha: new Date().toISOString(), // 📌 Agregar fecha y hora
-        });
-        console.log("✅ Datos guardados en Firebase");
-        return true;
-    } catch (error) {
-        console.error("❌ Error al guardar datos:", error);
-        return false;
+      const docRef = await addDoc(collection(db, "contactos"), {
+        ...formData,
+        timestamp: serverTimestamp(),
+      });
+      console.log("Documento guardado con ID:", docRef.id);
+      return true;
+    } catch (error: Error) { // Especificamos que error es de tipo Error
+      console.error("Error al guardar los datos:", error);
+      throw new Error("No se pudo guardar los datos en Firestore: " + error.message);
     }
-};
-
-export { db };
+  };
