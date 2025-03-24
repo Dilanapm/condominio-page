@@ -161,8 +161,8 @@ const Header = () => {
                             </AnimatePresence>
                         </div>
 
-                        <Link href="/clients" className="text-white text-xl hover:text-gray-600 transition">
-                            Clientes
+                        <Link href="/prices" className="text-white text-xl hover:text-gray-600 transition">
+                            Precios
                         </Link>
                         <Link href="/contact-us" className="text-white text-xl hover:text-gray-600 transition">
                             Contáctanos
@@ -260,11 +260,11 @@ const Header = () => {
                         </div>
 
                         <Link
-                            href="/clients"
+                            href="/prices"
                             className="text-white hover:text-gray-600 transition"
                             onClick={toggleMenu}
                         >
-                            Clientes
+                            Precios
                         </Link>
                         <Link
                             href="/contact-us"

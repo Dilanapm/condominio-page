@@ -68,7 +68,7 @@ const ContactForm = ({ onClose }) => {
                         onChange={handleChange} value={formData.email}
                     />
                     <input 
-                        type="text" name="rol" placeholder="Rol (administrador, copropietario, etc.)"
+                        type="text" name="ubicacion" placeholder="Ubicación"
                         className="w-full p-2 border rounded text-black"
                         onChange={handleChange} value={formData.rol}
                     />
