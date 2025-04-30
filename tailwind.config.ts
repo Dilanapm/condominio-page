@@ -6,11 +6,13 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // #009ca6
   theme: {
     extend: {
       colors: {
-        secondary: "#009ca6",
+        secondary: "#011324",
         darkBg: "#131424",
+        buttonBg: "#00FF00",
       },
       backgroundImage: {
         "gradient-cover":

@@ -41,7 +41,7 @@ const Header = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-0 w-full z-50 bg-secondary/60 bg-opacity-90 backdrop-blur-md shadow-md h-16 sm:h-16 md:h-20"
+            className="fixed top-0 left-0 w-full z-50 bg-secondary bg-opacity-90 backdrop-blur-md shadow-md h-16 sm:h-16 md:h-20"
         >
             <header className="w-full h-full flex items-center justify-between px-6 md:px-10">
                 {/* Logo */}
@@ -173,7 +173,7 @@ const Header = () => {
                     <Link
                         href="https://mysite-tlxb.onrender.com/users/login"
                         target="_blank"
-                        className="hidden md:block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300"
+                        className="hidden md:block px-4 py-2 bg-buttonBg text-black font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
                     >
                         Ingresar
                     </Link>
