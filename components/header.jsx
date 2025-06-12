@@ -18,7 +18,7 @@ const Header = () => {
 
     const handleContinue = () => {
         setShowModal(false);
-        window.open(" https://torreseguraup.railway.app/", "_blank"); // abre la URL solo si continúa
+        window.open("https://torresegura.up.railway.app/", "_blank"); // abre la URL solo si continúa
     };
 
     const handleClose = () => {
