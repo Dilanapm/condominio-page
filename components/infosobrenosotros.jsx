@@ -36,7 +36,7 @@ const TrialSection = () => {
                         ¡Pruébalo 30 días y descubre <span className="text-secondary">TorreSegura!</span>
                     </h1>
                     <p className="text-gray-800 mt-2 text-lg md:text-xl">
-                        Únete a las miles de personas que ahorran tiempo y organizan sus propiedades con CondoVive. <br />
+                        Únete a las miles de personas que ahorran tiempo y organizan sus propiedades con TorreSegura. <br />
                         Dejanos tus datos para poder contactarnos contigo y explicarte con mas detalle nuestro servicio
                     </p>
 

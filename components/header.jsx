@@ -5,11 +5,25 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion"; // Para animaciones
 import { Menu, X, ShieldCheck, Users, Briefcase } from "lucide-react";
 import Image from "next/image";
+import AdminWarningModal from "@/components/AdminWarningModal"; // ajusta la ruta si es necesario
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [benefitsOpen, setBenefitsOpen] = useState(false);
     const timeoutRef = useRef(null); // Para manejar el retraso en cierre
+    const [showModal, setShowModal] = useState(false);
 
+    const handleIngresarClick = () => {
+        setShowModal(true);
+    };
+
+    const handleContinue = () => {
+        setShowModal(false);
+        window.open(" https://torreseguraup.railway.app/", "_blank"); // abre la URL solo si continúa
+    };
+
+    const handleClose = () => {
+        setShowModal(false);
+    };
     const toggleMenu = () => setMenuOpen((prev) => !prev);
     const toggleBenefits = () => setBenefitsOpen((prev) => !prev);
 
@@ -170,15 +184,20 @@ const Header = () => {
                     </nav>
 
                     {/* Botón de Ingresar */}
-                    <Link
-                        href="https://mysite-tlxb.onrender.com/users/login"
-                        target="_blank"
+                    <button
+                        onClick={handleIngresarClick}
                         className="hidden md:block px-4 py-2 bg-buttonBg text-black font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
                     >
                         Ingresar
-                    </Link>
+                    </button>
                 </div>
             </header>
+            <AdminWarningModal
+                isOpen={showModal}
+                onContinue={handleContinue}
+                onClose={handleClose}
+            />
+
 
             {/* Menú desplegable en móviles */}
             <AnimatePresence>
@@ -273,14 +292,17 @@ const Header = () => {
                         >
                             Contáctanos
                         </Link>
-                        <Link
-                            href="https://mysite-tlxb.onrender.com/users/login"
-                            target="_blank"
+                        <button
+                            onClick={() => {
+                                toggleMenu(); // Cierra el menú móvil
+                                handleIngresarClick(); // Abre el modal
+                            }}
                             className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300"
-                            onClick={toggleMenu}
                         >
                             Ingresar
-                        </Link>
+                        </button>
+
+
                     </motion.nav>
                 )}
             </AnimatePresence>

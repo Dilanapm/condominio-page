@@ -52,7 +52,7 @@ export default function PricesPage() {
             <ul className="text-sm text-white text-left space-y-2 mb-6">
               <li>✅ Todo lo incluido en el Plan Avanzado</li>
               <li>✅ Historial de accesos por 180 días</li>
-              <li>✅ Instalación de cámara con IA para escaneo automático de QR</li>
+              <li>✅ Instalación de cámara con IA para escaneo automático de QR y reconocimiento de carnet de identidad</li>
               <li>✅ Accesos automáticos sin intervención del guardia</li>
               <li>✅ Soporte técnico prioritario</li>
             </ul>
