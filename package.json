@@ -10,11 +10,10 @@
   },
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
-    "@voiceflow/react-chat": "^1.65.2",
     "firebase": "^11.4.0",
     "framer-motion": "^11.0.3",
     "lucide-react": "^0.323.0",
-    "next": "^15.2.2",
+    "next": "^15.2.8",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
