@@ -1,22 +1,58 @@
-## VIDEO COMPLETO EN YOUTUBE
-https://youtu.be/HMbzJaBi4OU
+# Condominio Page
 
-## Getting Started
+Plataforma web desarrollada con Next.js para presentar una solución inteligente de **gestión y seguridad para condominios**.  
+El proyecto está enfocado en mostrar una propuesta tecnológica orientada a mejorar la administración condominial, optimizar procesos internos y fortalecer la seguridad de residentes, visitantes y administradores.
 
-First, run the development server:
+## Descripción del proyecto
+
+La página expone una solución digital para condominios que integra herramientas de administración, comunicación y control de accesos.  
+Su objetivo es centralizar procesos importantes dentro de una sola plataforma, facilitando la gestión diaria y mejorando la experiencia de los usuarios.
+
+Entre los principales enfoques del sistema se encuentran:
+
+- Administración integral de condominios
+- Control de residentes
+- Gestión de pagos
+- Notificaciones y comunicaciones
+- Reportes y estadísticas
+- Gestión de llaves y accesos
+- Soporte y atención al cliente
+- Soporte continuo 24/7
+
+Además, la propuesta incorpora una visión tecnológica basada en automatización, monitoreo en tiempo real e integración de tecnologías emergentes para la seguridad y eficiencia operativa.
+
+## Objetivo
+
+Desarrollar una página web moderna e interactiva que permita presentar de forma clara los beneficios, servicios y propuesta de valor de una plataforma inteligente para condominios.
+
+## Tecnologías utilizadas
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Swiper**
+- **Firebase**
+- **Voiceflow React Chat**
+- **tsParticles**
+
+## Funcionalidades visibles en la página
+
+- Sección principal de presentación del sistema
+- Información sobre la solución de gestión y seguridad
+- Visualización de servicios ofrecidos
+- Estadísticas o métricas destacadas del proyecto
+- Portafolio o referencia de condominios
+- Sección de clientes o testimonios
+- Formulario o canal de contacto
+- Navegación por distintas secciones informativas
+
+## Estructura general del proyecto
 
 ```bash
-npm install
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-<img width="1680" alt="Screenshot 2024-02-12 at 16 24 45" src="https://github.com/ratasi/landing-page-particles/assets/16082370/ad4315fe-c97f-4788-b1b5-5117836779ae">
-
-<img width="1680" alt="Screenshot 2024-02-12 at 16 26 28" src="https://github.com/ratasi/landing-page-particles/assets/16082370/8fbd1765-1255-4f3d-91a8-46de04bfd055">
-
-<img width="1680" alt="Screenshot 2024-02-12 at 16 49 37" src="https://github.com/ratasi/landing-page-particles/assets/16082370/38827044-a2f4-455c-a9a7-987dda752c9e">
-
-<img width="1678" alt="Screenshot 2024-02-12 at 16 33 26" src="https://github.com/ratasi/landing-page-particles/assets/16082370/fa7cf285-b091-4811-b464-db63c3b52c72">
-
-<img width="1680" alt="Screenshot 2024-02-12 at 16 49 45" src="https://github.com/ratasi/landing-page-particles/assets/16082370/54aa5cca-913c-444e-8495-1007e5630aa7">
+app/
+components/
+public/
+utils/
+data.tsx
