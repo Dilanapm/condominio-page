@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
-import ChatbotWrapper from "@/components/chatbot/ChatbotWrapper";
+// import ChatbotWrapper from "@/components/chatbot/ChatbotWrapper";
 import Footer from "@/components/Footer";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         {/* <Navbar /> */}
-        <ChatbotWrapper />
+        {/* <ChatbotWrapper /> */}
         <Footer/>
       </body>
     </html>
