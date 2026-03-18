@@ -1,7 +1,7 @@
 # Condominio Page
 
 Plataforma web desarrollada con Next.js para presentar una solución inteligente de **gestión y seguridad para condominios**.  
-El proyecto está enfocado en mostrar una propuesta tecnológica orientada a mejorar la administración condominial, optimizar procesos internos y fortalecer la seguridad de residentes, visitantes y administradores.
+El proyecto está enfocado en mostrar una propuesta tecnológica orientada a mejorar la administración condominial, optimizar procesos internos y fortalecer la seguridad de residentes, visitantes y gerentes.
 
 ## Descripción del proyecto
 
@@ -44,7 +44,7 @@ Desarrollar una página web moderna e interactiva que permita presentar de forma
 - Visualización de servicios ofrecidos
 - Estadísticas o métricas destacadas del proyecto
 - Portafolio o referencia de condominios
-- Sección de clientes o testimonios
+- Sección de funcionalidades y beneficios por rol
 - Formulario o canal de contacto
 - Navegación por distintas secciones informativas
 

@@ -8,7 +8,7 @@ export default function AdminWarningModal({ isOpen, onContinue, onClose }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white rounded-2xl p-6 shadow-lg w-full max-w-sm text-center">
         <h2 className="text-xl font-semibold text-red-600 mb-4">⚠️ Acceso restringido</h2>
-        <p className="mb-6 text-gray-700">Solo los administradores y Gerentes pueden acceder a esta sección.</p>
+        <p className="mb-6 text-gray-700">Solo el Administrador del sistema y los Gerentes pueden acceder a esta sección.</p>
         <div className="flex justify-around">
           <button
             onClick={onClose}

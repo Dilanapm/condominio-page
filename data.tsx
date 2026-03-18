@@ -56,9 +56,9 @@ export const itemsNavbar = [
     },
     {
         id: 4,
-        title: "Target",
+        title: "Precios",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
-        link: "/clients",
+        link: "/prices",
     },
     {
         id: 5,
@@ -73,7 +73,7 @@ export const dataAboutPage = [
         id: 1,
         title: "Sistema Inteligente de Gestión y Seguridad para Condominios",
         subtitle: "Transformando la Seguridad y la Administración de Condominios",
-        description: "Nuestro sistema ofrece una plataforma IoT avanzada para mejorar la seguridad y eficiencia en la gestión de condominios. Desde control de accesos con reconocimiento facial hasta automatización de procesos administrativos, integramos tecnología de vanguardia para ofrecer una experiencia segura y optimizada a los residentes y administradores.",
+        description: "Nuestro sistema ofrece una plataforma IoT avanzada para mejorar la seguridad y eficiencia en la gestión de condominios. Desde control de accesos con reconocimiento facial hasta automatización de procesos administrativos, integramos tecnología de vanguardia para ofrecer una experiencia segura y optimizada a los residentes y gerentes.",
         date: "2024",
     },
     {
@@ -135,8 +135,8 @@ export const dataCounter = [
 export const serviceData = [
     {
         icon: <HomeIcon />,
-        title: "Administración de Condominios",
-        description: "Gestión integral de condominios, incluyendo mantenimiento, pagos y control de residentes.",
+        title: "Gerencia del Edificio",
+        description: "Gestión integral del edificio: personal, residentes, accesos y operación diaria.",
     },
     {
         icon: <UserRound />,
@@ -145,8 +145,8 @@ export const serviceData = [
     },
     {
         icon: <Graph />,
-        title: "Gestión de Pagos",
-        description: "Administración de cuotas, generación de estados de cuenta y control de pagos en línea.",
+        title: "Gestión de Expensas",
+        description: "Definición de expensas por unidad funcional y gestión de cobros con QR bancario (tercero).",
     },
     // {
 
@@ -157,7 +157,7 @@ export const serviceData = [
     {
         icon: <Speech />,
         title: "Notificaciones y Comunicaciones",
-        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente porparte del guardia.",
+        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente por parte del personal o la administración.",
     },
     {
         icon: <Graph />,
@@ -170,10 +170,10 @@ export const serviceData = [
         description: "Control y administración de llaves digitales y accesos restringidos en el condominio.",
     },
     {
-        icon: <Support />,
-        title: "Soporte y Atención al Cliente",
-        description: "Atención y solución de problemas relacionados con la administración del condominio.",
-    },  
+        icon: <Book />,
+        title: "Reservas de Áreas Comunes",
+        description: "Reservas y organización de áreas comunes desde la aplicación.",
+    },
     {icon: <Support />,
         title: "Soporte 24/7",
         description: "Atención y mantenimiento continuo para garantizar un funcionamiento óptimo del sistema en todo momento.",

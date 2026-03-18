@@ -114,16 +114,16 @@ const Header = () => {
                                         <div className="absolute w-full h-2 top-0 left-0" />
                                         <div className="w-[400px] bg-white shadow-lg rounded-lg p-4 grid grid-cols-2 gap-4">
                                             <Link
-                                                href="/benefits/administrators"
+                                                href="/benefits/gerentes"
                                                 className="block bg-green-200/40 rounded-lg p-2 hover:bg-green-200 transition-all duration-200"
                                             >
                                                 <div className="flex flex-col">
                                                     <div className="flex items-center gap-2 text-gray-700 font-bold">
                                                         <Briefcase size={18} className="text-green-600" />
-                                                        Administradores
+                                                        Gerentes
                                                     </div>
                                                     <p className="text-gray-500 text-sm mt-1">
-                                                        Gestión eficiente, transparencia y comunicación.
+                                                        Gestión del edificio, expensas y control.
                                                     </p>
                                                 </div>
                                             </Link>
@@ -137,7 +137,7 @@ const Header = () => {
                                                         Residentes
                                                     </div>
                                                     <p className="text-gray-500 text-sm mt-1">
-                                                        Información organizada en un solo lugar.
+                                                        Expensas, alertas, reservas e invitaciones.
                                                     </p>
                                                 </div>
                                             </Link>
@@ -148,10 +148,10 @@ const Header = () => {
                                                 <div className="flex flex-col">
                                                     <div className="flex items-center gap-2 text-gray-700 font-bold">
                                                         <ShieldCheck size={18} className="text-yellow-600" />
-                                                        Guardias
+                                                        Personal
                                                     </div>
                                                     <p className="text-gray-500 text-sm mt-1">
-                                                        Acceso rápido a visitas QR y reportes.
+                                                        Accesos, QR y alertas (rol Vigilante).
                                                     </p>
                                                 </div>
                                             </Link>
@@ -238,13 +238,11 @@ const Header = () => {
                                         className="w-[90%] mx-auto bg-white shadow-lg rounded-lg p-4 flex flex-col gap-3 mt-2"
                                     >
                                         <Link
-                                            href="/benefits/administrators"
+                                            href="/benefits/gerentes"
                                             className="block bg-green-200/40 rounded-lg p-2 hover:bg-green-200 transition-all"
                                         >
-                                            <div className="text-gray-700 font-bold">Administradores</div>
-                                            <p className="text-gray-500 text-sm">
-                                                Gestión eficiente y comunicación.
-                                            </p>
+                                            <div className="text-gray-700 font-bold">Gerentes</div>
+                                            <p className="text-gray-500 text-sm">Gestión del edificio y expensas.</p>
                                         </Link>
                                         <Link
                                             href="/benefits/residents"
@@ -252,17 +250,15 @@ const Header = () => {
                                         >
                                             <div className="text-gray-700 font-bold">Residentes</div>
                                             <p className="text-gray-500 text-sm">
-                                                Información organizada en un solo lugar.
+                                                Alertas, expensas, reservas e invitaciones.
                                             </p>
                                         </Link>
                                         <Link
                                             href="/benefits/guards"
                                             className="block bg-yellow-200/40 rounded-lg p-2 hover:bg-yellow-200 transition-all"
                                         >
-                                            <div className="text-gray-700 font-bold">Guardias</div>
-                                            <p className="text-gray-500 text-sm">
-                                                Acceso rápido a visitas QR y reportes.
-                                            </p>
+                                            <div className="text-gray-700 font-bold">Personal</div>
+                                            <p className="text-gray-500 text-sm">Accesos y alertas (Vigilante).</p>
                                         </Link>
                                         {/* <Link
                                             href="#"

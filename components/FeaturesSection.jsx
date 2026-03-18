@@ -17,7 +17,7 @@ const FeaturesSection = () => {
                 <div className="flex flex-col items-center">
                     <QrCode size={40} className="text-blue-600" />
                     <span className="mt-2 font-semibold">Control de Accesos con QR</span>
-                    <p className="text-sm text-gray-600 text-center">Escanea tu código QR con el guardia o la camara con IA para poder ingresar</p>
+                    <p className="text-sm text-gray-600 text-center">Escanea tu código QR con el personal (rol Vigilante) o con la cámara con IA para ingresar.</p>
                 </div>
 
                 {/* Registro Automático de Entradas y Salidas */}
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
                 <div className="flex flex-col items-center">
                     <Eye size={40} className="text-blue-600" />
                     <span className="mt-2 font-semibold">Transparencia</span>
-                    <p className="text-sm text-gray-600 text-center">Historial de accesos disponible para administradores y residentes.</p>
+                    <p className="text-sm text-gray-600 text-center">Historial de accesos disponible para gerentes y residentes.</p>
                 </div>
 
                 {/* App Móvil */}
@@ -41,18 +41,18 @@ const FeaturesSection = () => {
                     <p className="text-sm text-gray-600 text-center">Gestiona accesos, permisos y visitantes desde tu celular.</p>
                 </div>
 
-                {/* Encuestas y Votaciones */}
+                {/* Reservas */}
                 <div className="flex flex-col items-center">
                     <Vote size={40} className="text-blue-600" />
-                    <span className="mt-2 font-semibold">Encuestas y Votaciones</span>
-                    <p className="text-sm text-gray-600 text-center">Toma decisiones en la comunidad de forma democrática.</p>
+                    <span className="mt-2 font-semibold">Reservas de Áreas Comunes</span>
+                    <p className="text-sm text-gray-600 text-center">Reserva áreas comunes desde la app y mantén la organización del edificio.</p>
                 </div>
 
                 {/* Gestión de Seguridad */}
                 <div className="flex flex-col items-center">
                     <ShieldCheck size={40} className="text-blue-600" />
-                    <span className="mt-2 font-semibold">Gestión de Seguridad</span>
-                    <p className="text-sm text-gray-600 text-center">Monitoreo y reportes de actividades sospechosas.</p>
+                    <span className="mt-2 font-semibold">Alertas y Notificaciones</span>
+                    <p className="text-sm text-gray-600 text-center">Crea alertas, recibe notificaciones y reporta incidentes en la comunidad.</p>
                 </div>
             </div>
             {/* Cámara con IA */}

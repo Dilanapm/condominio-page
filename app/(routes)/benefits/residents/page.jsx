@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from 'react-type-animation';
-import { QrCode, Smartphone, KeyRound, LogIn } from "lucide-react";
+import { QrCode, Bell, CreditCard, CalendarCheck } from "lucide-react";
 import ContainerPage from "@/components/container-page";
 import ServiceFeature from "@/components/ServiceSection";
 
@@ -19,11 +19,13 @@ export default function ResidentsBenefits() {
                             🏠 Residente (Propietario y Copropietario)<br />
                             <TypeAnimation
                                 sequence={[
-                                    'Acceso seguro con QR',
+                                    'Invitaciones con QR',
                                     1000,
-                                    'Gestión desde tu celular',
+                                    'Pago de expensas',
                                     1000,
-                                    'Olvídate de llaves o tarjetas',
+                                    'Alertas y notificaciones',
+                                    1000,
+                                    'Reservas de áreas comunes',
                                     1000
                                 ]}
                                 wrapper="span"
@@ -34,17 +36,11 @@ export default function ResidentsBenefits() {
                         </h1>
 
                         <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                            <strong>TorreSegura</strong> permite a los residentes gestionar sus accesos y los de sus visitantes de forma
-                            rápida, segura y desde su propio celular, sin necesidad de llaves físicas.
+                            <strong>TorreSegura</strong> permite al residente, desde la app móvil, <strong>pagar expensas</strong>, <strong>crear alertas</strong>, recibir notificaciones de la comunidad, <strong>reservar áreas comunes</strong> y generar <strong>invitaciones con QR</strong> para sus visitantes.
                         </p>
 
                         {/* Botones */}
                         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5 pb-10">
-                            <Link href="/clients">
-                                <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md mb-5 text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                                    Nuestros clientes
-                                </button>
-                            </Link>
                             <Link href="/contact-us">
                                 <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md mb-5 text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
                                     Contáctanos
@@ -77,32 +73,32 @@ export default function ResidentsBenefits() {
 
                     {/* Grid de beneficios */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 text-gray-800">
-                        {/* QR Intransferible */}
+                        {/* Invitaciones con QR */}
                         <div className="flex flex-col items-center">
                             <QrCode size={40} className="text-blue-600" />
-                            <span className="mt-2 font-semibold">Códigos QR Únicos</span>
-                            <p className="text-sm text-gray-600 text-center">Accede con códigos seguros e intransferibles para ti y tus visitas.</p>
+                            <span className="mt-2 font-semibold">Invitaciones con QR</span>
+                            <p className="text-sm text-gray-600 text-center">Genera un QR para tu visitante y compártelo desde tu celular.</p>
                         </div>
 
-                        {/* Seguridad sin llaves */}
+                        {/* Pago de expensas */}
                         <div className="flex flex-col items-center">
-                            <KeyRound size={40} className="text-blue-600" />
-                            <span className="mt-2 font-semibold">Sin Llaves Físicas en la entrada</span>
-                            <p className="text-sm text-gray-600 text-center">Evita el uso de llaves o tarjetas. Todo desde tu celular.</p>
+                            <CreditCard size={40} className="text-blue-600" />
+                            <span className="mt-2 font-semibold">Pago de Expensas</span>
+                            <p className="text-sm text-gray-600 text-center">Paga tus expensas desde la app con el QR provisto por el gerente (entidad bancaria).</p>
                         </div>
 
-                        {/* App Móvil */}
+                        {/* Alertas y notificaciones */}
                         <div className="flex flex-col items-center">
-                            <Smartphone size={40} className="text-blue-600" />
-                            <span className="mt-2 font-semibold">App Móvil</span>
-                            <p className="text-sm text-gray-600 text-center">Gestiona tus accesos, permisos y visitas desde tu smartphone.</p>
+                            <Bell size={40} className="text-blue-600" />
+                            <span className="mt-2 font-semibold">Alertas</span>
+                            <p className="text-sm text-gray-600 text-center">Crea alertas y recibe notificaciones de alertas de otros residentes.</p>
                         </div>
 
-                        {/* Registro de ingresos */}
+                        {/* Reservas */}
                         <div className="flex flex-col items-center">
-                            <LogIn size={40} className="text-blue-600" />
-                            <span className="mt-2 font-semibold">Registro Automático</span>
-                            <p className="text-sm text-gray-600 text-center">Visualiza el historial de entradas y salidas al escanear tu QR.</p>
+                            <CalendarCheck size={40} className="text-blue-600" />
+                            <span className="mt-2 font-semibold">Reservas</span>
+                            <p className="text-sm text-gray-600 text-center">Reserva áreas comunes directamente desde la aplicación.</p>
                         </div>
                     </div>
 
@@ -113,9 +109,9 @@ export default function ResidentsBenefits() {
             <div className="mt-0 sm:mt-10 md:mt-20">
                 <ContainerPage>
                     <ServiceFeature
-                        title="Control inteligente de visitas"
+                        title="Invitaciones de visitantes con QR"
                         subtitle="RESIDENTES"
-                        description="Como residente, puedes generar códigos QR únicos para visitantes, permitiendo accesos seguros y sin contacto. Además, puedes registrar automáticamente tu salida y la de tus visitas desde la App móvil, manteniendo un historial completo de accesos."
+                        description="Como residente, puedes generar invitaciones con códigos QR para tus visitantes y compartirlas al instante. Además, puedes gestionar expensas, alertas, notificaciones y reservas de áreas comunes desde la app móvil."
                         imageUrl="/gen-qr.webp"
                         imageAlt="Monitoreo y control para residentes"
                         reverse

@@ -53,7 +53,7 @@ export default function PricesPage() {
               <li>✅ Todo lo incluido en el Plan Avanzado</li>
               <li>✅ Historial de accesos por 180 días</li>
               <li>✅ Instalación de cámara con IA para escaneo automático de QR y reconocimiento de carnet de identidad</li>
-              <li>✅ Accesos automáticos sin intervención del guardia</li>
+              <li>✅ Accesos automáticos sin intervención del vigilante</li>
               <li>✅ Soporte técnico prioritario</li>
             </ul>
             <span className="text-xl font-bold text-white">Lo mejor para tu condominio</span>
