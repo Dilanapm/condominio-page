@@ -12,7 +12,7 @@ export default function PricesPage() {
           Elige el plan que mejor se adapte a las necesidades de tu condominio
         </p>
 
-        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2">
           {/* Plan Básico */}
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-yellow-400 shadow-xl hover:scale-105 transition-transform">
             <h2 className="text-2xl font-bold text-yellow-300 mb-4">Plan Básico</h2>
@@ -41,22 +41,6 @@ export default function PricesPage() {
               <li>✅ Soporte técnico estándar</li>
             </ul>
             <span className="text-xl font-bold text-yellow-400">Ideal</span>
-          </div>
-
-          {/* Plan Premium */}
-          <div className="bg-gradient-to-br from-yellow-500 to-yellow-700 p-8 rounded-xl border-4 border-yellow-300 shadow-2xl transform scale-105">
-            <h2 className="text-2xl font-bold text-white mb-4">Plan Premium</h2>
-            <p className="text-white mb-4">
-              Máxima seguridad con tecnología de vanguardia integrada.
-            </p>
-            <ul className="text-sm text-white text-left space-y-2 mb-6">
-              <li>✅ Todo lo incluido en el Plan Avanzado</li>
-              <li>✅ Historial de accesos por 180 días</li>
-              <li>✅ Instalación de cámara con IA para escaneo automático de QR y reconocimiento de carnet de identidad</li>
-              <li>✅ Accesos automáticos sin intervención del vigilante</li>
-              <li>✅ Soporte técnico prioritario</li>
-            </ul>
-            <span className="text-xl font-bold text-white">Lo mejor para tu condominio</span>
           </div>
         </div>
 
